@@ -106,8 +106,8 @@ function StudentProfile() {
       
 
       <Box backgroundColor='secondary.light' sx={{ padding: 2, margin: 8, mt: 18}} borderRadius={2}>
-        <Box backgroundColor='secondary.main' sx={{ margin: 2, padding: 2, display:'flex', flexDirection:'column' }} borderRadius={2}>
-          <Grid2 container>
+        <Box backgroundColor='secondary.main' sx={{ margin: 2, padding: 2, }} borderRadius={2}>
+          <Grid2 container sx={{display:'flex', flexDirection:'column', alignItems:'center' }}>
           <Grid2 item xs={8} >
           <Typography textAlign='center' sx={{margin: 'auto'}} variant="h1" color='primary.main'>{student.firstName} {student.lastName}</Typography>
           </Grid2>
