@@ -38,6 +38,29 @@ function LoginForm() {
             </h3>
           )}
           <div>
+          <div>
+                    <Button
+                        color='secondary'
+                        variant='contained'
+                        onClick={() => {
+                            setUsername('studentdemo');
+                            setPassword('studentdemo')
+                        }}
+                        sx={{ marginBottom: '15px', marginTop: '15px' }}
+                    >
+                        Use demo student info
+                    </Button>
+                </div>
+                <div>
+                    <Button
+                        color='secondary'
+                        variant='contained'
+                        onClick={() => { setUsername('admin'); setPassword('admin') }}
+                        sx={{ marginBottom: '15px', marginTop: '15px' }}
+                    >
+                        Use demo admin info
+                    </Button>
+                </div>
             <label htmlFor="username">
               Username:
               <input
