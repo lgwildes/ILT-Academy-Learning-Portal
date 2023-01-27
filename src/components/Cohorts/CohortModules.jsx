@@ -83,6 +83,7 @@ function CohortModules() {
 
     }, [params.cohortId])
 
+    //map through this cohort's modules to push IDs into new array to check in conditional renders
     let arrayToCheck = [];
     cohortModules.map(publishedModule => {
         arrayToCheck.push(publishedModule.moduleId)
@@ -261,6 +262,7 @@ function CohortModules() {
                         return true
                     }
                     else {
+                        //unpublished modules displayed in gray with toggle off
                         return (
                             <>
                                 <Accordion

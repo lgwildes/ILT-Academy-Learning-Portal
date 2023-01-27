@@ -8,14 +8,10 @@ import Announcements from '../Announcements/Announcements';
 import { PrimaryMainTheme } from "../PrimaryMainTheme/PrimaryMainTheme";
 import { ThemeProvider } from '@mui/system';
 
-// This is one of our simplest components
-// It doesn't have local state,
-// It doesn't dispatch any redux actions or display any part of redux state
-// or even care what the redux state is'
 
 function AdminDashboard() {
     return (
-        // <div className="container">
+      
         <ThemeProvider theme={PrimaryMainTheme}>
             <Box sx={{ flexGrow: 1, bgcolor: 'background.light', mt:1.1 }}>
                 <Grid2 container spacing={2}>
@@ -38,7 +34,6 @@ function AdminDashboard() {
             </Box>
         </ThemeProvider>
 
-        // </div>
     )
 }
 

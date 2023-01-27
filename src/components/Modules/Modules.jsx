@@ -358,22 +358,3 @@ function Modules() {
 }
 
 export default Modules;
-
-//saved code in case pre/post class render created a bug
-// {assignments.map(assignment => {
-//     if (assignment.moduleId === module.id) {
-//         let pre = ''
-//         assignment.postClass === 'false' ? pre = 'Pre-Class' : pre = 'Post-Class'
-//         return (
-//             <StyledTableRow key={assignment.id}>
-//                 {/* <StyledTableCell component="th" scope="row">
-//                     {assignment.name}
-//                 </StyledTableCell> */}
-//                 <StyledTableCell align="right"><Link to={`/assignment/${assignment.id}`}>{assignment.name}</Link></StyledTableCell>
-//                 <StyledTableCell align="right">{assignment.createdDate}</StyledTableCell>
-//                 <StyledTableCell align="right">{pre}</StyledTableCell>
-//                 <StyledTableCell align="right">{assignment.feedback}</StyledTableCell>
-//             </StyledTableRow>
-//         )
-//     }
-// })}
